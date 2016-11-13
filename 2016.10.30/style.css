@@ -1,0 +1,23 @@
+div {
+  background-color: #ccc;
+  height: 50px;
+  width: 200px;
+}
+
+
+#div1 {
+  margin-top: 100px;
+}
+
+#div2 {
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+div#img-wrapper {
+  max-width: 300px;
+  overflow: hidden;
+}
