@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <style>
+        body {
+            background-color: black;
+            color: white
+        }
+        #frame-white {
+            background-color: white;
+            width: 425px;
+            height: 470px;
+            color: black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #img1 {
+            width: 400px;
+            height: 380px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #alpha {
+            color: white;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        #border {
+            border-top-style: solid;
+            border-width: 2px;
+            border-color: pink;
+        }
+
+        #color-red {
+          background-color: red;
+          height: 200px;
+          width: 200px;
+        }
+
+        #color-blue {
+          background-color: blue;
+          height: 200px;
+          width: 200px;
+        }
+
+        #submit-btn {
+          background-color: orange;
+        }
+
+    </style>
     <title>1주차 숙제</title>
 </head>
 
 <body>
+  <div class="container">
     <div class="frame1" id="frame1">
         <h1> Homework #1 </h1>
         <h4> 좋아하는 사람이 없어서 연예인으로 만들어보는 페이지 </h4></p>
     </div>
 
-    <div class="frame2" id="frame-white">
-        <p>
-            <img src="https://66.media.tumblr.com/94d56157ccb01cfe82b20b9d98377bf2/tumblr_ofwjrkpLma1uqcd12o3_1280.png" id="img1"></p>
-        <h2><mark>김영광</h2></mark>
-        </p>
-    </div>
+<div class="row">
+  <div class="col-md-6" id="color-blue">
+    <button class="btn btn-default" id="submit-btn">
+      <span class="glyphicon glyphicon-align-left" aria-hidden="true">click</span>
+    </button>
+  </div>
 
+  <div class="col-md-6" id="color-red">box2</div>
+</div>
+
+    <div class="frame2" id="frame-white">
+        <img class="img-responsive img-rounded" src="https://66.media.tumblr.com/94d56157ccb01cfe82b20b9d98377bf2/tumblr_ofwjrkpLma1uqcd12o3_1280.png" id="img1">
+        <h2><mark>김영광</mark></h2>
+    </div>
     <div>
         <p><b> 데뷔 </b> </p>
         <ul>
@@ -39,7 +96,7 @@
                 <li>2016 우리집에 사는 남자 <i>고난길 역</i> (주연) </li>
                 <li>2016 고호의 별이 빛나는 밤에 <i>강태호 역</i> (주연)</li>
                 <li>2015 디데이 <i>이해성 역</i> (주연)</li>
-                <li>2015 닥터이안 <i><모이안 역</i> (주연)</li>
+                <li>2015 닥터이안 <i>모이안 역</i> (주연)</li>
                 <li>2014 피노키오 <i>서범조 역</i> (주연)</li>
                 <li>2014 아홉수 소년 <i>강진구 역</i> (주연)</li>
                 <li>2013 굿닥터 <i>한진우 역</i> (조연)</li>
@@ -64,44 +121,14 @@
                 written and cody by
                 <a href="dawee.kim@gmail.com" target="_blank"> Dawee Kim </a>.</p>
     </div>
-
-
-
-    <style>
-        body {
-            background-color: black;
-            color: white
-        }
-
-        #frame-white {
-            background-color: white;
-            width: 425px;
-            height: 470px;
-            color: black;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        #img1 {
-            width: 400px;
-            height: 380px;
-            padding-top: 10px;
-            padding-left: 10px;
-        }
-
-        #alpha {
-            color: white;
-            padding-top: 40px;
-            padding-bottom: 30px;
-        }
-
-        #border {
-            border-top-style: solid;
-            border-width: 2px;
-            border-color: pink;
-        }
-    </style>
-
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </body>
 
+<script>
+  $('button').click(function(e){
+    $('img').hide();
+
+  });
+</script>
 </html>
